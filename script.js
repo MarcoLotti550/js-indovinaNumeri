@@ -8,11 +8,12 @@ while(numeriRandom.length < numeriTotali){
     }
 
 }
+
 document.getElementById('visualizza').innerHTML = numeriRandom;
 
-setTimeout(chediUtente, 30000);
+setTimeout(chediUtente, 2000);
 
-setTimeout(cancellaNumeri, 30500);
+setTimeout(cancellaNumeri, 2500);
 
 function cancellaNumeri() {
     document.getElementById('visualizza').innerHTML = "";
@@ -28,7 +29,6 @@ function chediUtente() {
             numeriUtente.push(nuovoNumero);
         }  
     }
-
 }
 
 function verificaNumeri(arrayUtente, arrayNumeri) {
@@ -44,6 +44,6 @@ function verificaNumeri(arrayUtente, arrayNumeri) {
 }
 
 function getrandomnumber(min, max) {
-    return Math.floor(math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
